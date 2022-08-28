@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import Typed from 'react-typed';
 // import { email } from '@config';
 
 const StyledHeroSection = styled.section`
@@ -39,6 +40,10 @@ const StyledHeroSection = styled.section`
     max-width: 540px;
   }
 
+  .typed-cursor {
+    display: none;
+  }
+
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
@@ -60,16 +65,30 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Ishan Bawne.</h2>;
-  const three = <h3 className="big-heading">I make games.</h3>;
+  const ok = <h3 className="big-heading"></h3>;
+  const three = (
+    <Typed
+      children={ok}
+      loop="true"
+      showCursor="false"
+      strings={[
+        'I make games.',
+        'I make websites.',
+        'I love studying Physics.',
+        'I love to play football.',
+      ]}
+      backSpeed={80}
+      typeSpeed={80}
+    />
+  );
   const four = (
     <>
       <p>
-        I’m a third year undergraduate student in department of physics at {' '}
+        I’m a third year undergraduate student in department of physics at{' '}
         <a href="https://iitk.ac.in/" target="_blank" rel="noreferrer">
           Indian Institute of Technology Kanpur
         </a>
-        .
-        I love studying physics, playing football and making softwares and games.
+        . I love studying physics, playing football and making softwares and games.
       </p>
     </>
   );
