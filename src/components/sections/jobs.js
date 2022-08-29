@@ -86,7 +86,7 @@ const StyledTabButton = styled.button`
   }
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 200px;
+    min-width: var(--tab-width-600p);
     padding: 0 15px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-dark);
@@ -116,10 +116,10 @@ const StyledHighlight = styled.div`
     top: auto;
     bottom: 0;
     width: 100%;
-    max-width: var(--tab-width);
+    max-width: var(--tab-width-600p);
     height: 2px;
     margin-left: 50px;
-    transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
+    transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width-600p)));
   }
   @media (max-width: 480px) {
     margin-left: 25px;
