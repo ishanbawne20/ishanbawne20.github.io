@@ -63,23 +63,25 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
+  const one = <h1> Hi, my name is </h1>;
   const two = <h2 className="big-heading">Ishan Bawne.</h2>;
   const ok = <h3 className="big-heading"></h3>;
   const three = (
     <Typed
-      children={ok}
+      // children={ok}
       loop="true"
       showCursor="false"
       strings={[
         'I make games.',
-        'I make websites.',
+        'I love to design and make websites.',
         'I love studying Physics.',
         'I love to play football.',
+        'I love to design UI/UX.',
       ]}
       backSpeed={80}
-      typeSpeed={80}
-    />
+      typeSpeed={80}>
+      {ok}
+    </Typed>
   );
   const four = (
     <>
