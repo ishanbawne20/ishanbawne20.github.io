@@ -4,7 +4,7 @@ title: 'Automation and Modification of open-source tools using custom written GL
 github: 'https://github.com/ishanbawne20/PixelPlanets.git'
 external: ''
 tech:
-  - Godot Engine
+  - Godot
   - GDScript
   - GLSL
   - Procedural Generation
