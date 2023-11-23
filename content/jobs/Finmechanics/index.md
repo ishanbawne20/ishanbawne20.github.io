@@ -1,5 +1,5 @@
 ---
-date: '2022-12-21'
+date: '2023-12-21'
 title: 'DevOps and Development Engineering Intern'
 company: 'FinMechanics India Pvt. Ltd.'
 location: 'Mumbai, Maharashtra, India'
