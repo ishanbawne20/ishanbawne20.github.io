@@ -86,7 +86,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a third year undergraduate student in department of physics at{' '}
+        I’m a Final year undergraduate student in department of physics at{' '}
         <a href="https://iitk.ac.in/" target="_blank" rel="noreferrer">
           Indian Institute of Technology Kanpur
         </a>

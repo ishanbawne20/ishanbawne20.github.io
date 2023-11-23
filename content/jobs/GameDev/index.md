@@ -3,7 +3,7 @@ date: '2022-12-21'
 title: 'Coordinator'
 company: 'GameDev Club IITK'
 location: 'Kanpur, UP, India'
-range: 'May 2022 - Present'
+range: 'May 2022 - April 2023'
 url: 'https://gds.sntiitk.in/'
 ---
 
